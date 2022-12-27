@@ -1,0 +1,15 @@
+apiVersion: v2
+appVersion: v2.40.5
+name: mimir-app
+description: A Helm chart for mimir-distributed.
+dependencies:
+- name: mimir-distributed
+  version: v3.3.0
+  repository: https://grafana.github.io/helm-charts
+  alias: mimir
+home: https://grafana.github.io/helm-charts
+sources:
+  - https://github.com/grafana/mimir/tree/main/operations/helm/charts/mimir-distributed
+version: 0.1.0
+annotations:
+  application.giantswarm.io/team: atlas
